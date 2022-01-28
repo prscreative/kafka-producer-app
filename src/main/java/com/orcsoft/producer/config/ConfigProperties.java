@@ -34,9 +34,9 @@ public class ConfigProperties {
     @PostConstruct
     public void printConfig() {
         logger.info("ConfigProperties >  bootstrapServerConfi={} , groupIdConfig={}, autoOffsetResetConfig={}, loopNumber={}",
-                this.getBootstrapServerConfig(),
-                this.getGroupIdConfig(),
-                this.getAutoOffsetResetConfig()
+                getBootstrapServerConfig(),
+                getGroupIdConfig(),
+                getAutoOffsetResetConfig()
         );
     }
 

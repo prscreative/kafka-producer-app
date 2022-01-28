@@ -1,21 +1,23 @@
 package com.orcsoft.producer.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.google.gson.Gson;
 import com.orcsoft.producer.bean.Customer;
 import com.orcsoft.producer.bean.CustomerReqMsg;
 import com.orcsoft.producer.service.KafkaProducer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping(value = "/kafka")
-public class KafkaController {
+public class CustomerController {
 
-    private static final Logger logger = LoggerFactory.getLogger(KafkaController.class);
+    private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
     @Autowired
     private KafkaProducer kafkaProducer;
