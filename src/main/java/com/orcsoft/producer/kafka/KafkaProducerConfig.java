@@ -1,4 +1,4 @@
-package com.orcsoft.producer.producer;
+package com.orcsoft.producer.kafka;
 
 import java.io.IOException;
 import java.util.Map;

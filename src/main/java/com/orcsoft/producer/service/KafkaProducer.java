@@ -1,7 +1,8 @@
 package com.orcsoft.producer.service;
 
 import com.orcsoft.producer.config.ConfigProperties;
-import com.orcsoft.producer.producer.KafkaProducerConfig;
+import com.orcsoft.producer.kafka.KafkaProducerConfig;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
