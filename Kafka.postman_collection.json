@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "638a8e6a-2be5-415d-9015-1ed5d4a02be4",
+		"name": "Kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"customerList\":[\n      {\n         \"customerId\":\"CUST1001\",\n         \"firstName\":\"Somsri\",\n         \"lastName\":\"Jaidee\",\n         \"email\":\"Somsri.j@gmail.com\",\n         \"phone\":\"0953325643\"\n      },\n      {\n         \"customerId\":\"CUST1002\",\n         \"firstName\":\"Somchai\",\n         \"lastName\":\"wangsom\",\n         \"email\":\"Somchai.w@gmail.com\",\n         \"phone\":\"0839875483\"\n      }\n   ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/producer/kafka/publishMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producer",
+						"kafka",
+						"publishMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
