@@ -48,8 +48,8 @@ public class ConfigProperties {
         propertiesConfig.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, getBootstrapServerConfig());
         propertiesConfig.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         propertiesConfig.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        propertiesConfig.put(ConsumerConfig.GROUP_ID_CONFIG, getGroupIdConfig());
-        propertiesConfig.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, getAutoOffsetResetConfig());
+//        propertiesConfig.put(ConsumerConfig.GROUP_ID_CONFIG, getGroupIdConfig());
+//        propertiesConfig.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, getAutoOffsetResetConfig());
         return propertiesConfig;
     }
 

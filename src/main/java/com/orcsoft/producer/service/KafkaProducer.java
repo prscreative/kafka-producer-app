@@ -23,7 +23,9 @@ public class KafkaProducer {
     public void sendMessage(String jsonData) {
         logger.info("Start Kafka producer publish message process...");
         String groupId = configProperties.getGroupIdConfig();
+        
         kafkaTemplate.send(groupId, jsonData);
+        
         logger.info("End Kafka producer publish message process...");
     }
 }
